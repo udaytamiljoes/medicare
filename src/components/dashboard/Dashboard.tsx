@@ -3,7 +3,7 @@ import { Activity, Bell, ChevronDown, ChevronUp, ClipboardList, Plus, User } fro
 import DashboardStats from '@/components/dashboard/DashboardStats'
 import { MedicationCard } from '@/components/dashboard/MedicationCard'
 import AddMedicationModal from '@/components/dashboard/AddMedicationModal'
-import { Button } from '@/components/ui/Button'
+import { Button } from '@/components/ui/button'
 import { useMedication } from '@/contexts/MedicationContext'
 import { useAuth } from '@/contexts/AuthContext'
 import { Calendar } from '@/components/dashboard/Calendar'
