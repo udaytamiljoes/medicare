@@ -10,8 +10,8 @@ import {
   X,
   ChevronRight
 } from 'lucide-react'
-import { useAuth } from '../../contexts/AuthContext'
-import { UserRole } from '../../types'
+import { useAuth } from '../contexts/AuthContext'
+import { UserRole } from '.././types'
 
 interface SidebarProps {
   activeTab: string

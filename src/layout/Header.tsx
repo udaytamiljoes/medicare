@@ -1,6 +1,6 @@
 import React from 'react'
 import { Menu, Bell, SwitchCamera } from 'lucide-react'
-import { useAuth } from '../../contexts/AuthContext'
+import { useAuth } from '../contexts/AuthContext'
 
 interface HeaderProps {
   title: string

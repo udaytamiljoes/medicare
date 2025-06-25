@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Clock, Check, Camera, MoreVertical, EditIcon, Trash, X } from 'lucide-react'
 import { Medication } from '../../types'
 import { useMedication } from '../../contexts/MedicationContext'
-import { Button } from '../ui/Button'
+import { Button } from '@/components/ui/Button'
 
 interface MedicationCardProps {
   medication: Medication;

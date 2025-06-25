@@ -1,14 +1,14 @@
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Calendar } from "@/components/ui/calendar";
+import { Calendar } from "@/components/ui/Calendar";
 import { Badge } from "@/components/ui/badge";
 import { Check, Calendar as CalendarIcon, Image, User } from "lucide-react";
 import MedicationTracker from "./MedicationTracker";
 import { format, isToday, isBefore, startOfDay } from "date-fns";
 import Medications from "@/pages/Medications";
-import { useAuth } from "@/context/AuthContext";
+import { useAuth } from "../contexts/AuthContext";
 
 const PatientDashboard = () => {
   const { user } = useAuth();

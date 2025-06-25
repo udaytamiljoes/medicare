@@ -1,6 +1,6 @@
 import React from 'react';
 import { Clock, Camera, X } from 'lucide-react';
-import { Button } from '../ui/Button';
+import { Button } from '@/components/ui/Button';
 import { useMedication } from '../../contexts/MedicationContext';
 
 function Taken() {

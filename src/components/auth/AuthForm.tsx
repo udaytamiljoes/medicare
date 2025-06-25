@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useForm, Controller } from 'react-hook-form'
 import { Mail, Lock, User, UserCheck } from 'lucide-react'
-import { Button } from '../ui/Button'
+import { Button } from "@/components/ui/Button"
 import { Input } from '../ui/Input'
 import { useAuth } from '../../contexts/AuthContext'
 import { UserRole } from '../../types'
