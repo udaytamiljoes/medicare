@@ -1,7 +1,7 @@
 import React from 'react';
 import { Clock, Camera, X } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
-import { useMedication } from '../../contexts/MedicationContext';
+import { useMedication } from '@/contexts/MedicationContext';
 
 function Taken() {
     const { medicationLogs, handleRemove } = useMedication();

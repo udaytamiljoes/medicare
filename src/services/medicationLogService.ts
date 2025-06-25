@@ -1,5 +1,5 @@
 // src/services/medicationLogService.ts
-import { supabase } from "../lib/supabase";
+import { supabase } from "@/lib/supabase";
 
 export async function markMedicationTaken(userId: string, medicationId: number) {
   const today = new Date().toISOString().split("T")[0];

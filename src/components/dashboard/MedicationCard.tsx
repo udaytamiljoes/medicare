@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Clock, Check, Camera, MoreVertical, EditIcon, Trash, X } from 'lucide-react'
-import { Medication } from '../../types'
-import { useMedication } from '../../contexts/MedicationContext'
+import { Medication } from '@/types'
+import { useMedication } from '@/contexts/MedicationContext'
 import { Button } from '@/components/ui/Button'
 
 interface MedicationCardProps {
@@ -167,7 +167,7 @@ export const MedicationCard: React.FC<MedicationCardProps> = ({ medication, onEd
             </Button>
             <Button
               size="sm"
-                             className={`px-4 py-3 flex items-cente justify-between rounded-lg border bg-purple-50 text-purple-900 border-purple-300 hover:bg-purple-100`}
+                             className={`px-4 py-3 flex items-cente justify-between rounded-lg border bg-purple-50 text-black text-sm font-medium hover:text-gray-900 border-purple-300`}
 
               onClick={() => handleMarkTaken(medication)}
               disabled={isTaken}

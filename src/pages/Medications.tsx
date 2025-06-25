@@ -11,7 +11,7 @@ import {
     updateMedication,
     deleteMedication,
     markAsTaken,
-} from '../services/medicationService';
+} from '@/services/medicationService';
 
 import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';

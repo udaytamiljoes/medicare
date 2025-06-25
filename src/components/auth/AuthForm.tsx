@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { useForm, Controller } from 'react-hook-form'
 import { Mail, Lock, User, UserCheck } from 'lucide-react'
 import { Button } from "@/components/ui/Button"
-import { Input } from '../ui/Input'
-import { useAuth } from '../../contexts/AuthContext'
-import { UserRole } from '../../types'
+import { Input } from '@/components/ui/Input'
+import { useAuth } from '@/contexts/AuthContext'
+import { UserRole } from '@/types'
 import toast from 'react-hot-toast'
 
 interface AuthFormData {
@@ -196,13 +196,18 @@ export const AuthForm: React.FC = () => {
                 {isLogin ? 'Sign In' : 'Create Account'}
               </Button>
             </form>
-            <div>
+            {
+              isLogin && (
+                <div>
 
-              {/* <h2 className="text-sm text-gray-500 mt-6 mb-2">Demo Credentials</h2> */}
-              <h3 className="text-sm text-gray-700 mt-6 mb-2">Use these credentials to log in:</h3>
-              <div className='text-sm  text-gray-500'>Email : arunpandi@gmail.com</div>
-              <div className='text-sm  text-gray-500 '>Password : 12345678</div>
-            </div>
+                  {/* <h2 className="text-sm text-gray-500 mt-6 mb-2">Demo Credentials</h2> */}
+                  <h3 className="text-sm text-gray-700 mt-6 mb-2">Use these credentials to log in:</h3>
+                  <div className='text-sm  text-gray-500'>Email : arunpandi@gmail.com</div>
+                  <div className='text-sm  text-gray-500 '>Password : 12345678</div>
+                </div>
+              )
+            }
+
 
             <div className="mt-6 text-center">
               <button

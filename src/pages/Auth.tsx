@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useForm, FieldError } from 'react-hook-form';
-import { supabase } from '../lib/supabase';
+import { supabase } from '@/lib/supabase';
 import { motion } from 'framer-motion';
 // import Image from 'next/image';
-import LoginBg from "../assest/images/loginbg.png"
+import LoginBg from "@/assest/images/loginbg.png"
 
 type FormData = {
     email: string;

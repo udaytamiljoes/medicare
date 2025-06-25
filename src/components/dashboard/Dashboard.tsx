@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { Activity, Bell, ChevronDown, ChevronUp, ClipboardList, Plus, User } from 'lucide-react'
-import DashboardStats from './DashboardStats'
-import { MedicationCard } from './MedicationCard'
-import AddMedicationModal from './AddMedicationModal'
+import DashboardStats from '@/components/dashboard/DashboardStats'
+import { MedicationCard } from '@/components/dashboard/MedicationCard'
+import AddMedicationModal from '@/components/dashboard/AddMedicationModal'
 import { Button } from '@/components/ui/Button'
-import { useMedication } from '../../contexts/MedicationContext'
-import { useAuth } from '../../contexts/AuthContext'
-import { Calendar } from './Calendar'
+import { useMedication } from '@/contexts/MedicationContext'
+import { useAuth } from '@/contexts/AuthContext'
+import { Calendar } from '@/components/dashboard/Calendar'
 import { format, isToday, isSameDay, startOfDay, addDays } from 'date-fns'
 
 export const Dashboard: React.FC = () => {
@@ -362,7 +362,7 @@ export const Dashboard: React.FC = () => {
                 </p>
               </div>
               <Button
-                className={`px-4 py-3 flex items-cente justify-between rounded-lg border bg-purple-50 text-purple-900 border-purple-300 hover:bg-purple-100`}
+                className={`px-4 py-3 flex items-cente justify-betwee rounded-lg border bg-purple-50 text-black text-sm font-medium hover:text-gray-900 border-purple-300`}
                 // className="text-red-700 bg-transparent border border-red-700 hover:bg-red-50 px-4 py-2 rounded-md transition-colors duration-200 flex items-center"
                 onClick={() => setShowAddModal(true)}
               >

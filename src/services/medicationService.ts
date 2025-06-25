@@ -1,5 +1,5 @@
 // src/services/medicationService.ts
-import { supabase } from "../lib/supabase";
+import { supabase } from "@/lib/supabase";
 
 export const getMedications = async (userId: string) => {
     const { data, error } = await supabase

@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Clock } from 'lucide-react'
 import { useForm, Controller } from 'react-hook-form'
-import { Modal } from '../ui/Modal'
+import { Modal } from '@/components/ui/Modal'
 import { Button } from '@/components/ui/Button'
-import { Input } from '../ui/Input'
-import { useMedication } from '../../contexts/MedicationContext'
-import { Medication } from '../../types'
+import { Input } from '@/components/ui/Input'
+import { useMedication } from '@/contexts/MedicationContext'
+import { Medication } from '@/types'
 
 interface MedicationFormModalProps {
   isOpen: boolean
@@ -59,7 +59,7 @@ const MedicationFormModal: React.FC<MedicationFormModalProps> = ({
   const [times, setTimes] = useState<string[]>(['08:00'])
   const [loading, setLoading] = useState(false)
 
-  
+
   useEffect(() => {
     if (defaultValues) {
       reset({
@@ -76,7 +76,7 @@ const MedicationFormModal: React.FC<MedicationFormModalProps> = ({
     }
   }, [defaultValues, isOpen])
 
-  
+
   useEffect(() => {
     const option = frequencyOptions.find(opt => opt.value === frequency)
     if (option) {
@@ -209,7 +209,7 @@ const MedicationFormModal: React.FC<MedicationFormModalProps> = ({
         <div className="flex justify-end gap-3">
           <Button type="button" variant="ghost" onClick={onClose}>Cancel</Button>
           <Button
-                className={`px-4 py-3 flex items-cente justify-between rounded-lg border bg-purple-50 text-purple-900 border-purple-300 hover:bg-purple-100`}
+            className={`px-4 py-3 flex items-cente justify-between rounded-lg border bg-purple-50 text-black text-sm font-medium hover:text-gray-900 border-purple-300`}
             type="submit" loading={loading}>
             {isEdit ? 'Update' : 'Add'} Medication
           </Button>

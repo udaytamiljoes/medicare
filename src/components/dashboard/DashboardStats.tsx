@@ -1,7 +1,7 @@
 import React from 'react'
 import { TrendingUp, Calendar, Target, Award, User } from 'lucide-react'
-import { useMedication } from '../../contexts/MedicationContext'
-import { useAuth } from '../../contexts/AuthContext'
+import { useMedication } from '@/contexts/MedicationContext'
+import { useAuth } from '@/contexts/AuthContext'
 function DashboardStats() {
   const { adherenceStats } = useMedication()
   const { currentRole } = useAuth()
