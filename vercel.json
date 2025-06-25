@@ -5,13 +5,14 @@
         "src": "package.json",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "dist"
+          "distDir": "dist",
+          "installCommand": "npm install --unsafe-perm && chmod +x node_modules/.bin/vite"
         }
       }
     ],
     "routes": [
       {
-        "src": "/(.*)",
+        "src": "/(.*)", 
         "dest": "dist/$1"
       }
     ]
