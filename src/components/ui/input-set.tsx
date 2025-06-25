@@ -1,3 +1,4 @@
+
 import React from 'react'
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
@@ -6,13 +7,13 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   icon?: React.ReactNode
 }
 
-export const Input: React.FC<InputProps> = ({
+export const Input = React.forwardRef<HTMLInputElement, InputProps>(({
   label,
   error,
   icon,
   className = '',
   ...props
-}) => {
+}, ref) => {
   return (
     <div className="w-full">
       {label && (
@@ -27,6 +28,7 @@ export const Input: React.FC<InputProps> = ({
           </div>
         )}
         <input
+          ref={ref}
           className={`
             block w-full rounded-lg border border-gray-300 px-3 py-2 text-sm
             placeholder-gray-400 shadow-sm transition-colors duration-200
@@ -44,4 +46,6 @@ export const Input: React.FC<InputProps> = ({
       )}
     </div>
   )
-}
+})
+
+Input.displayName = 'Input'

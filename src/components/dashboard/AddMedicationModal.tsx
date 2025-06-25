@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { Clock } from 'lucide-react'
 import { useForm, Controller } from 'react-hook-form'
-import { Modal } from '@/components/ui/Modal'
+import { Modal } from '@/components/ui/modal-dia'
 import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/Input'
+import { Input } from '@/components/ui/input-set'
 import { useMedication } from '@/contexts/MedicationContext'
 import { Medication } from '@/types'
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useForm, Controller } from 'react-hook-form'
 import { Mail, Lock, User, UserCheck } from 'lucide-react'
 import { Button } from "@/components/ui/button"
-import { Input } from '@/components/ui/Input'
+import { Input } from '@/components/ui/input-set'
 import { useAuth } from '@/contexts/AuthContext'
 import { UserRole } from '@/types'
 import toast from 'react-hot-toast'
