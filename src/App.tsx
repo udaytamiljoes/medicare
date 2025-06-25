@@ -8,7 +8,7 @@ import { Header } from './components/layout/Header'
 import { Dashboard } from './components/dashboard/Dashboard'
 // import { EmptyState } from './components/dashboard/EmptyState'
 import TakenDetails from './components/dashboard/Taken'
-import Notification from './components/pages/Notification'
+import Notification from './pages/Notification'
 import { Toaster } from 'react-hot-toast'
 
 const queryClient = new QueryClient({

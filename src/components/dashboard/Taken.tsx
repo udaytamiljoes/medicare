@@ -3,8 +3,8 @@ import { Clock, Camera, X } from 'lucide-react';
 import { Button } from '../ui/Button';
 import { useMedication } from '../../contexts/MedicationContext';
 
-const TakenDetails = () => {
-    const { medicationLogs,handleRemove } = useMedication();
+function Taken() {
+    const { medicationLogs, handleRemove } = useMedication();
     return (
         <div className="bg-white rounded-xl p-6 w-full max-w-2xl shadow-lg border border-gray-100">
             {/* Header */}
@@ -106,4 +106,4 @@ const TakenDetails = () => {
     );
 };
 
-export default TakenDetails;
+export default Taken;
